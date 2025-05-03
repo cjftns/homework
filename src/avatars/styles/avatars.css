@@ -1,1 +1,54 @@
-/* 여기에 스타일을 구현해 주세요 */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  grid-template-rows: repeat(2, 64px);
+  gap: 20px;
+  padding: 100px;
+  border: 3px solid black;
+  width: max-content;
+}
+
+.avatar {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status-toggle {
+  display: none;
+}
+
+.status {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  background-color: #dbdbdb;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.status-toggle:checked + .status {
+  background-color: #4cfe88;
+}
