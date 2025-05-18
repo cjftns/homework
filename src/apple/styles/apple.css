@@ -1,3 +1,35 @@
-@import "./card-component.css";
+@import './card-component.css';
 
 /* 카드 레이아웃 */
+.container {
+  display: grid;
+  gap: var(--base-spacing);
+
+  .cardBox {
+    background-repeat: no-repeat;
+    background-size: cover; /* 필요 시 크기 조절 */
+    background-position: center; /* 위치 중앙 정렬 */
+  }
+
+  .cardBox:nth-child(1) {
+    background-image: url(../products/ipad_pro.jpeg);
+  }
+  .cardBox:nth-child(2) {
+    background-image: url(../products/ipad_air.jpeg);
+  }
+  .cardBox:nth-child(3) {
+    background-image: url(../products/iphone15_pro.jpeg);
+  }
+  .cardBox:nth-child(4) {
+    background-image: url(../products/iphone15.jpeg);
+  }
+  .cardBox:nth-child(5) {
+    background-image: url(../products/apple_watch.jpeg);
+  }
+  .cardBox:nth-child(6) {
+    background-image: url(../products/macbook_air.jpeg);
+  }
+  .cardBox:nth-child(7) {
+    background-image: url(../products/airpods_pro.jpeg);
+  }
+}
